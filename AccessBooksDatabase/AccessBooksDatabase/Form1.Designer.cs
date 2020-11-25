@@ -34,12 +34,11 @@ namespace AccessBooksDatabase
             // 
             // lblState
             // 
-            this.lblState.AutoSize = true;
             this.lblState.BackColor = System.Drawing.Color.White;
             this.lblState.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblState.Location = new System.Drawing.Point(12, 426);
+            this.lblState.Location = new System.Drawing.Point(12, 408);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(2, 15);
+            this.lblState.Size = new System.Drawing.Size(763, 33);
             this.lblState.TabIndex = 0;
             // 
             // frmTitles
@@ -54,7 +53,6 @@ namespace AccessBooksDatabase
             this.Text = "Titles Database";
             this.Load += new System.EventHandler(this.frmTitles_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

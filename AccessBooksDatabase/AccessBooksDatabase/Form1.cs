@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*David Lockwood
+ *11/24/2020
+ *Accesses Books database in SQL
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
