@@ -1,0 +1,10 @@
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csprojAssemblyReference.cache
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.frmTitles.resources
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.Properties.Resources.resources
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csproj.GenerateResource.cache
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csproj.CoreCompileInputs.cache
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.exe.config
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.exe
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.pdb
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.exe
+C:\Users\dlockwood024548\Documents\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.pdb
