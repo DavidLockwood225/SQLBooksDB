@@ -37,6 +37,7 @@ namespace AccessBooksDatabase
             this.txtYearPublished = new System.Windows.Forms.TextBox();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.txtPubID = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -115,11 +116,20 @@ namespace AccessBooksDatabase
             this.txtPubID.Size = new System.Drawing.Size(284, 29);
             this.txtPubID.TabIndex = 7;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(26, 215);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 8;
+            // 
             // frmTitles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 271);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.txtPubID);
             this.Controls.Add(this.txtISBN);
             this.Controls.Add(this.txtYearPublished);
@@ -148,6 +158,7 @@ namespace AccessBooksDatabase
         private System.Windows.Forms.TextBox txtYearPublished;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.TextBox txtPubID;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
