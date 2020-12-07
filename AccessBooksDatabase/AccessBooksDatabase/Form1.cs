@@ -34,7 +34,14 @@ namespace AccessBooksDatabase
                                                + "AttachDbFilename=" + Path.GetFullPath("SQLBooksDB.mdf")
                                                + ";Integrated Security=True;"
                                                + "Connect Timeout=30;");
-            booksConnection.Open();
+            try
+            {
+                booksConnection.Open();
+            }
+            catch
+            {
+                lblError.Text = "Error: Unable to connect to the database.";
+            }
             titlesCommand = new SqlCommand("Select * from Titles", booksConnection);
             titlesAdapter = new SqlDataAdapter();
             titlesAdapter.SelectCommand = titlesCommand;
