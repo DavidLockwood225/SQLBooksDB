@@ -1,6 +1,6 @@
 ﻿/*David Lockwood
  *11/24/2020
- *Accesses Books database in SQL, add controls bound to fields in the Title database table
+ *Accesses Books database in SQL, add controls to allow navigation through the rows of the Titles database table
  */
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,7 @@ namespace AccessBooksDatabase
         SqlCommand titlesCommand;
         SqlDataAdapter titlesAdapter;
         DataTable titlesTable;
+        CurrencyManager titlesManager;
         public frmTitles()
         {
             InitializeComponent();
@@ -43,11 +44,32 @@ namespace AccessBooksDatabase
             txtYearPublished.DataBindings.Add("Text", titlesTable, "Year_Published");
             txtISBN.DataBindings.Add("Text", titlesTable, "ISBN");
             txtPubID.DataBindings.Add("Text", titlesTable, "PubID");
+            titlesManager = (CurrencyManager)BindingContext[titlesTable];
             booksConnection.Close();
             booksConnection.Dispose();
             titlesCommand.Dispose();
             titlesAdapter.Dispose();
             titlesTable.Dispose();
+        }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position = 0;
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position--;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position++;
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position = titlesManager.Count - 1;
         }
     }
 }
