@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*David Lockwood
+ *12/7/2020
+ *Accesses Books database in SQL using Data Source Configuration Wizard
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
