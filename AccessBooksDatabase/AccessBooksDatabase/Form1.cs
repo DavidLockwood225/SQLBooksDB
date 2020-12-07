@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace AccessBooksDatabase
 {
@@ -26,8 +27,8 @@ namespace AccessBooksDatabase
         private void frmTitles_Load(object sender, EventArgs e)
         {
             booksConnection = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;"
-                                               + "AttachDbFilename=C:\\SQL DBs\\SQLBooksDB.mdf;"
-                                               + "Integrated Security=True;"
+                                               + "AttachDbFilename=" + Path.GetFullPath("SQLBooksDB.mdf")
+                                               + ";Integrated Security=True;"
                                                + "Connect Timeout=30;");
             booksConnection.Open();
             lblState.Text = booksConnection.State.ToString();

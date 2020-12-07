@@ -18,3 +18,13 @@ C:\Users\dlockwood024548\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDat
 C:\Users\dlockwood024548\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csproj.CoreCompileInputs.cache
 C:\Users\dlockwood024548\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.exe
 C:\Users\dlockwood024548\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.pdb
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.exe.config
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.exe
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\bin\Debug\AccessBooksDatabase.pdb
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csprojAssemblyReference.cache
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.frmTitles.resources
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.Properties.Resources.resources
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csproj.GenerateResource.cache
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.csproj.CoreCompileInputs.cache
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.exe
+C:\Users\Dharla\Documents\SQLBooksDB\AccessBooksDatabase\AccessBooksDatabase\obj\Debug\AccessBooksDatabase.pdb
