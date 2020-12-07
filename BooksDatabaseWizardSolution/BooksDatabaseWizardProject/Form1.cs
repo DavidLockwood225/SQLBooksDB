@@ -32,8 +32,14 @@ namespace BooksDatabaseWizardProject
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'sQLBooksDBDataSet.Titles' table. You can move, or remove it, as needed.
-            this.titlesTableAdapter.Fill(this.sQLBooksDBDataSet.Titles);
-
+            try
+            {
+                this.titlesTableAdapter.Fill(this.sQLBooksDBDataSet.Titles);
+            }
+            catch
+            {
+                lblError.Text = "Error: Unable to connect to database.";
+            }
         }
     }
 }

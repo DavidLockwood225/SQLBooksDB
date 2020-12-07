@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label titleLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTitles));
             System.Windows.Forms.Label year_PublishedLabel;
             System.Windows.Forms.Label iSBNLabel;
             System.Windows.Forms.Label pubIDLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTitles));
             this.sQLBooksDBDataSet = new BooksDatabaseWizardProject.SQLBooksDBDataSet();
             this.titlesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.titlesTableAdapter = new BooksDatabaseWizardProject.SQLBooksDBDataSetTableAdapters.TitlesTableAdapter();
@@ -55,6 +55,7 @@
             this.year_PublishedTextBox = new System.Windows.Forms.TextBox();
             this.iSBNTextBox = new System.Windows.Forms.TextBox();
             this.pubIDTextBox = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             titleLabel = new System.Windows.Forms.Label();
             year_PublishedLabel = new System.Windows.Forms.Label();
             iSBNLabel = new System.Windows.Forms.Label();
@@ -73,6 +74,33 @@
             titleLabel.Size = new System.Drawing.Size(30, 13);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "Title:";
+            // 
+            // year_PublishedLabel
+            // 
+            year_PublishedLabel.AutoSize = true;
+            year_PublishedLabel.Location = new System.Drawing.Point(12, 70);
+            year_PublishedLabel.Name = "year_PublishedLabel";
+            year_PublishedLabel.Size = new System.Drawing.Size(81, 13);
+            year_PublishedLabel.TabIndex = 3;
+            year_PublishedLabel.Text = "Year Published:";
+            // 
+            // iSBNLabel
+            // 
+            iSBNLabel.AutoSize = true;
+            iSBNLabel.Location = new System.Drawing.Point(12, 96);
+            iSBNLabel.Name = "iSBNLabel";
+            iSBNLabel.Size = new System.Drawing.Size(35, 13);
+            iSBNLabel.TabIndex = 5;
+            iSBNLabel.Text = "ISBN:";
+            // 
+            // pubIDLabel
+            // 
+            pubIDLabel.AutoSize = true;
+            pubIDLabel.Location = new System.Drawing.Point(12, 122);
+            pubIDLabel.Name = "pubIDLabel";
+            pubIDLabel.Size = new System.Drawing.Size(43, 13);
+            pubIDLabel.TabIndex = 7;
+            pubIDLabel.Text = "Pub ID:";
             // 
             // sQLBooksDBDataSet
             // 
@@ -227,15 +255,6 @@
             this.titleTextBox.Size = new System.Drawing.Size(286, 20);
             this.titleTextBox.TabIndex = 2;
             // 
-            // year_PublishedLabel
-            // 
-            year_PublishedLabel.AutoSize = true;
-            year_PublishedLabel.Location = new System.Drawing.Point(12, 70);
-            year_PublishedLabel.Name = "year_PublishedLabel";
-            year_PublishedLabel.Size = new System.Drawing.Size(81, 13);
-            year_PublishedLabel.TabIndex = 3;
-            year_PublishedLabel.Text = "Year Published:";
-            // 
             // year_PublishedTextBox
             // 
             this.year_PublishedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.titlesBindingSource, "Year_Published", true));
@@ -243,15 +262,6 @@
             this.year_PublishedTextBox.Name = "year_PublishedTextBox";
             this.year_PublishedTextBox.Size = new System.Drawing.Size(286, 20);
             this.year_PublishedTextBox.TabIndex = 4;
-            // 
-            // iSBNLabel
-            // 
-            iSBNLabel.AutoSize = true;
-            iSBNLabel.Location = new System.Drawing.Point(12, 96);
-            iSBNLabel.Name = "iSBNLabel";
-            iSBNLabel.Size = new System.Drawing.Size(35, 13);
-            iSBNLabel.TabIndex = 5;
-            iSBNLabel.Text = "ISBN:";
             // 
             // iSBNTextBox
             // 
@@ -261,15 +271,6 @@
             this.iSBNTextBox.Size = new System.Drawing.Size(286, 20);
             this.iSBNTextBox.TabIndex = 6;
             // 
-            // pubIDLabel
-            // 
-            pubIDLabel.AutoSize = true;
-            pubIDLabel.Location = new System.Drawing.Point(12, 122);
-            pubIDLabel.Name = "pubIDLabel";
-            pubIDLabel.Size = new System.Drawing.Size(43, 13);
-            pubIDLabel.TabIndex = 7;
-            pubIDLabel.Text = "Pub ID:";
-            // 
             // pubIDTextBox
             // 
             this.pubIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.titlesBindingSource, "PubID", true));
@@ -278,11 +279,20 @@
             this.pubIDTextBox.Size = new System.Drawing.Size(286, 20);
             this.pubIDTextBox.TabIndex = 8;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(15, 171);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 9;
+            // 
             // frmTitles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 254);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(pubIDLabel);
             this.Controls.Add(this.pubIDTextBox);
             this.Controls.Add(iSBNLabel);
@@ -330,6 +340,7 @@
         private System.Windows.Forms.TextBox year_PublishedTextBox;
         private System.Windows.Forms.TextBox iSBNTextBox;
         private System.Windows.Forms.TextBox pubIDTextBox;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
