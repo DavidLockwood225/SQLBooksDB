@@ -1,6 +1,6 @@
 ﻿/*David Lockwood
  *11/24/2020
- *Accesses Books database in SQL
+ *Accesses Books database in SQL, add controls bound to fields in the Title database table
  */
 using System;
 using System.Collections.Generic;
@@ -19,6 +19,9 @@ namespace AccessBooksDatabase
     public partial class frmTitles : Form
     {
         SqlConnection booksConnection;
+        SqlCommand titlesCommand;
+        SqlDataAdapter titlesAdapter;
+        DataTable titlesTable;
         public frmTitles()
         {
             InitializeComponent();
@@ -31,10 +34,20 @@ namespace AccessBooksDatabase
                                                + ";Integrated Security=True;"
                                                + "Connect Timeout=30;");
             booksConnection.Open();
-            lblState.Text = booksConnection.State.ToString();
+            titlesCommand = new SqlCommand("Select * from Titles", booksConnection);
+            titlesAdapter = new SqlDataAdapter();
+            titlesAdapter.SelectCommand = titlesCommand;
+            titlesTable = new DataTable();
+            titlesAdapter.Fill(titlesTable);
+            txtTitle.DataBindings.Add("Text", titlesTable, "Title");
+            txtYearPublished.DataBindings.Add("Text", titlesTable, "Year_Published");
+            txtISBN.DataBindings.Add("Text", titlesTable, "ISBN");
+            txtPubID.DataBindings.Add("Text", titlesTable, "PubID");
             booksConnection.Close();
-            lblState.Text += booksConnection.State.ToString();
             booksConnection.Dispose();
+            titlesCommand.Dispose();
+            titlesAdapter.Dispose();
+            titlesTable.Dispose();
         }
     }
 }
