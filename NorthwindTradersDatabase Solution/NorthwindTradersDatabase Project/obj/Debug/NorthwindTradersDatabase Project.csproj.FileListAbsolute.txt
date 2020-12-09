@@ -1,0 +1,10 @@
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\bin\Debug\NorthwindTradersDatabase Project.exe.config
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\bin\Debug\NorthwindTradersDatabase Project.exe
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\bin\Debug\NorthwindTradersDatabase Project.pdb
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase Project.csprojAssemblyReference.cache
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase_Project.frmCustomers.resources
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase_Project.Properties.Resources.resources
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase Project.csproj.GenerateResource.cache
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase Project.csproj.CoreCompileInputs.cache
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase Project.exe
+C:\Users\dlockwood024548\Documents\NorthwindTradersDatabase Solution\NorthwindTradersDatabase Project\obj\Debug\NorthwindTradersDatabase Project.pdb
